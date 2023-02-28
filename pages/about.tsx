@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ReactElement } from 'react'
 import { JsxElement } from 'typescript'
 
 import { DarkLayout } from '../components/layouts/DarkLayout'
@@ -23,7 +24,7 @@ export default function AboutPage() {
 }
 
 
-AboutPage.getLayout = function getLayout( page: JsxElement ) {
+AboutPage.getLayout = function getLayout( page: ReactElement ) {
   return (
     <MainLayout>
       <DarkLayout>
